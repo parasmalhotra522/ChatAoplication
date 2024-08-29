@@ -13,11 +13,11 @@ const ChatProvider = ({children}) => {
    useEffect(()=> {
 
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
-    console.log("Checking user info", userInfo);
+    // console.log("Checking user info", userInfo);
     setUser(userInfo);
 
     if(!userInfo) {
-        console.log("THIS IS WORK OF CHAT PROCIDER");
+        // console.log("THIS IS WORK OF CHAT PROCIDER");
        navigate('/'); 
     }
    }, [navigate]);

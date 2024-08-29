@@ -119,6 +119,7 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
     // console.log("-- selected chat", selectedChat);
 
     useEffect(() => {
+        setSelectedChat('')
         socket = io(END_POINT);
         console.log('Checking the client-side', socket);
         socket.emit("setup", user);
@@ -185,7 +186,9 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
                         {
                             !selectedChat.isGroupChat ? (
                                 <>
+                                    {console.log("*****",getSender(user, selectedChat.users))}
                                     {getSender(user, selectedChat.users)}
+                                    
                                     <ProfileModal user={ getSenderObjects(user, selectedChat.users)} />
                                 </>
                             ) : (
