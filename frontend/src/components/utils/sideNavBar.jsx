@@ -153,7 +153,7 @@ const SideNavBar = () => {
           </Button>
 
         </Tooltip>
-        <Text fontFamily='Work sans' fontSize='2xl'>Chat It - The Chat Application</Text>
+        <Text fontFamily='Work sans' fontSize='2xl'>Lets2alk - The Chat Application</Text>
       <div>
       <Menu>
             <MenuButton p={1} fontSize='2xl' >

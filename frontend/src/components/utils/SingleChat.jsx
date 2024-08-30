@@ -12,7 +12,8 @@ import Lottie from 'lottie-react';
 import typingAnimation from '../TypingAnimation.json';
 import axios from '../../axios.config.js';
 
-const END_POINT = 'http://localhost:8081';
+// const END_POINT = 'http://localhost:8081';
+const END_POINT = 'https://lets2alk.onrender.com';
 
 var socket, selectedCompare;
 
