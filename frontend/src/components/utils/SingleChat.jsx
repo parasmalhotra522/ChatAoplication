@@ -186,6 +186,7 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
                         {
                             !selectedChat.isGroupChat ? (
                                 <>
+                                    {console.log('*********CHECL USER', user, selectedChat )}
                                     {console.log("*****",getSender(user, selectedChat.users))}
                                     {getSender(user, selectedChat.users)}
                                     

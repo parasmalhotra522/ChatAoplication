@@ -58,7 +58,7 @@ const server =app.listen(port, console.log(`Server is running at port ${port}`))
 
 const io = new Server(server, {  pingTimeOut: 60000,
     cors : {
-        origin:'http://localhost:3000'
+        origin:['http://localhost:3000', "https://lets2alk.onrender.com"],
     },
 });
 

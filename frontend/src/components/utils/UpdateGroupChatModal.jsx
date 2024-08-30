@@ -1,23 +1,19 @@
 import React, { useState } from 'react'
 import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  useDisclosure,
-  Button,
-  Image,
-    Text,
-  Box,
-  FormControl,
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    useDisclosure,
+    Button,
+    Box,
+    FormControl,
     Input,
     useToast,
-    Stack,
-  Skeleton,
-  Spinner
+    Spinner
 } from '@chakra-ui/react'
 
 import { FaEye } from "react-icons/fa";

@@ -18,7 +18,7 @@ export default function HomePage() {
 >
         <Text fontSize="4xl" fontFamily='Work sans'
           textAlign={"center"}
-          color="black"> Chat Application </Text> 
+          color="black"> Lets2alk - Chat Application </Text> 
       
      
       

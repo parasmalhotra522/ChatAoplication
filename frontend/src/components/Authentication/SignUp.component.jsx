@@ -39,41 +39,7 @@ export default function SignUp() {
     const [loading, setLoading] = useState(false);
     const toast = useToast();
 
-    //     const handleValidations = (property) => {
-//     switch (property) {
-//         case 'name':
-//             const nameRegex = /^[a-zA-Z]{2,30}$/;
-//             const isValidName = nameRegex.test(formData.name.trim());
-//             const nameError = isValidName ? '' : '* Name should contain only alphabetic characters and be between 2 to 30 characters long';
-//             setError(prevError => ({ ...prevError, nameError }));
-//             break;
-//         case 'emailId':
-//             const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-//             const isValidEmail = emailRegex.test(formData.emailId.trim());
-//             const emailIdError = isValidEmail ? '' : '* Please Enter a Valid Email';
-//             setError(prevError => ({ ...prevError, emailIdError }));
-//             break;
-        
-//         case 'password':
-//             const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-//             const isValidPassword = passwordRegex.test(formData.password);
-//             const passwordError = isValidPassword ? '' : '* Password should be Atleast 8 character long \n Should contain atleast 1 upper, 1 lower and 1 digit and should contain Special character';
-//             // console.log("Check password", passwordError);
-//             setError(prevError => ({ ...prevError, passwordError }));
-//             break;
-        
-//         case 'confirmPassword':
-//             console.log('confirm password',formData.confirmPassword);
-//             const isValidConfirmPassword = formData.password === formData.confirmPassword;
-//             console.log('checking if password is valid', formData.password, formData.confirmPassword, isValidConfirmPassword);
-//             const confirmPasswordError = isValidConfirmPassword ? '' : '* Password and Confirm Password don\'t Match';  
-//             setError(prevError => ({ ...prevError, confirmPasswordError }));
-//             break;
-//         default:
-//             break;
-//     }
-    // }
-    
+ 
     const handleOnChange = async (property, value) => {
          
            const updatedFormData = { ...formData, [property]: value };
@@ -197,7 +163,7 @@ export default function SignUp() {
         } catch (err) {
             console.log("Checkng erro", err.response.data.error);
             toast({
-                 title: 'Error Occured !',
+                title: 'Error Occured !',
                 description: err.response.data.error,
                 status: "error",
                 duration: 5000,
