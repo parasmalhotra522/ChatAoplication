@@ -117,7 +117,7 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
         fetchMessages();
         selectedCompare = selectedChat;
       // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [selectedChat]);
+    }, [selectedChat, setSelectedChat]);
     // console.log("-- selected chat", selectedChat);
 
     useEffect(() => {
