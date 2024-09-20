@@ -25,7 +25,7 @@ import axios from '../../axios.config.js';
 const UpdateGroupChatModal = ({fetchAgain, setFetchAgain, fetchMessages}) => {
 
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const { user, selectedChat, setSelectedChat, chats, setChats } = ChatState();
+    const { user, selectedChat, setSelectedChat } = ChatState();
     const [groupChatName, setGroupChatName] = useState()
     const [renameLoading, setRenameLoading] = useState()
     const [searchResult, setSearchResult] = useState();
