@@ -14,7 +14,8 @@ import typingAnimation from '../TypingAnimation.json';
 import axios from '../../axios.config.js';
 
 // const END_POINT = 'http://localhost:8081';
-const END_POINT = 'https://lets2alk.onrender.com';
+// const END_POINT = 'https://lets2alk.onrender.com';
+const END_POINT = 'https://lets2alk.netlify.app';
 
 var socket, selectedCompare;
 
