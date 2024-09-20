@@ -14,6 +14,7 @@ function App() {
         <Route path='/' element={<HomePage/>} exact/>
          <Route path='/chats' element={<ChatPage/>} exact/>
         </Routes>
+
       {/* <Button colorScheme='blue'>Button</Button> */}
     </div>
   );
