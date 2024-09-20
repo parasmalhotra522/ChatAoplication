@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import { ChatState } from '../../context/ChatProvider';
 import { Box, Spinner, Text, FormControl, Input, useToast } from '@chakra-ui/react';
